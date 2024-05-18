@@ -7,6 +7,7 @@ const ulTarefas = document.getElementById("lista-de-itens")
 form.addEventListener("submit", function (evento) {
     evento.preventDefault()
     salvarItem()
+    mostrarTarefa()
 })
 
 
@@ -28,14 +29,18 @@ function salvarItem() {
 }
 
 function mostrarTarefa() {
+    ulTarefas.innerHTML = ''
     tarefasAseFazer.forEach((elemento, index) => {
-        ulTarefas.innerHTML = +`<main class="column is-7 hero-body is-offset-one-fifth is-unselectable">
-
-        <form id="form-itens" class="has-text-centered">
-            <input type="text" class="input has-text-centered" required
-                placeholder="Digite o que precisa ser feito hoje?" id="receber-item">
-            <button for="salvar" type="submit" class="mt-2 has-text-weight-bold button is-small is-primary">Salvar
-                item</button>
-        </form> `
+        ulTarefas.innerHTML += `
+            <li class="item-compra is-flex is-justify-content-space-between" data-value="${index}">
+        <div>
+            <input type="checkbox"  class="is-clickable" />
+            <input type="text" class="is-size-5" value="${elemento.valor}"></span>
+        </div>
+        <div>
+            <i class="fa-solid fa-trash is-clickable deletar"></i>
+        </div>
+    </li>
+    `
     })
 }

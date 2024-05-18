@@ -1,11 +1,13 @@
 html {
-    background: linear-gradient(177.52deg, #021645f3 2.11%, #154580 81.34%);
+    background: linear-gradient(190.52deg, #00310cf3 5.11%, #3f7e49 90.34%);
     background-repeat: no-repeat;
     height: 100%;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
+
+
 }
 
 h2,
@@ -19,21 +21,28 @@ footer {
 }
 
 .itens-comprados {
-    text-decoration: line-through;
+    text-decoration: none;
 }
 
 .borda-lista {
-    border-bottom: dotted 2px blue;
+    border-bottom: dotted 2px rgb(4, 222, 131);
 }
 
 input:disabled {
+    border-bottom: dotted 2px rgb(4, 222, 131);
     border: none;
-    background: none;
-    color: black;
+    background: rgb(224, 142, 95);
+    color: rgb(4, 222, 131);
 }
 
 input {
+
     border: none;
     background: none;
-    color: black;
+    color: rgb(225, 216, 216);
+}
+
+.column {
+    color: rgb(4, 222, 131);
+
 }
