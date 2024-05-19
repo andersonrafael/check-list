@@ -31,8 +31,7 @@ footer {
 input:disabled {
     border-bottom: dotted 2px rgb(4, 222, 131);
     border: none;
-    background: rgb(224, 142, 95);
-    color: rgb(4, 222, 131);
+    background: black color: rgb(4, 222, 131);
 }
 
 input {
