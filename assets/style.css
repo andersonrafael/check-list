@@ -20,9 +20,7 @@ footer {
 
 }
 
-.itens-comprados {
-    text-decoration: none;
-}
+
 
 .borda-lista {
     border-bottom: dotted 2px rgb(4, 222, 131);
@@ -31,7 +29,7 @@ footer {
 input:disabled {
     border-bottom: dotted 2px rgb(4, 222, 131);
     border: none;
-    background: black color: rgb(4, 222, 131);
+    background: rgb(253, 251, 251)
 }
 
 input {
